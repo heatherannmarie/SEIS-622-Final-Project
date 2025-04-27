@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+import { routes } from './app-routing.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServiceMenuComponent } from './service-menu/service-menu.component';
-import { StaffBioComponent } from './staff-bio/staff-bio.component';
+import { ServiceMenuComponent } from './services/service-menu/service-menu.component';
+import { StaffBioComponent } from './staff/staff-bio/staff-bio.component';
 import { PhotoBannerComponent } from './photo-banner/photo-banner.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BookingCalendarComponent } from './booking-calendar/booking-calendar.component';
+import { BookingCalendarComponent } from './book-now/booking-calendar/booking-calendar.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { SpaComponent } from './spa/spa.component';
+import { StaffComponent } from './staff/staff.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PoliciesComponent } from './policies/policies.component';
+import { BookNowComponent } from './book-now/book-now.component';
+import { ContactFormComponent } from './contact-us/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -16,15 +24,21 @@ import { BookingCalendarComponent } from './booking-calendar/booking-calendar.co
     ServiceMenuComponent,
     StaffBioComponent,
     PhotoBannerComponent,
-    HeaderComponent,
-    FooterComponent,
-    BookingCalendarComponent
+    BookingCalendarComponent,
+    AboutComponent,
+    ServicesComponent,
+    SpaComponent,
+    StaffComponent,
+    ContactUsComponent,
+    PoliciesComponent,
+    BookNowComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [provideRouter(routes)],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
