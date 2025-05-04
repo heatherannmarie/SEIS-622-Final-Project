@@ -1,8 +1,6 @@
-<form action="send_email.php" method="post">
+<form (ngSubmit)="onSubmit()">
     <label for="name">Name</label><br>
     <input type="text" id="name" name="name" required><br>
-    <label for="phoneNumber">Phone Number</label><br>
-    <input type="text" id="phoneNumber" name="phoneNumber" required><br>
     <label for="emailAddress">Email Address</label><br>
     <input type="text" id="emailAddress" name="emailAddress" required><br>
     <label for="message">Your Message</label><br>
