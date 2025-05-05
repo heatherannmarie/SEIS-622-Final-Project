@@ -1,10 +1,9 @@
-<form>
+<form (ngSubmit)="onSubmit()">
     <label for="name">Name</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="phoneNumber">Phone Number</label><br>
-    <input type="text" id="phoneNumber" name="phoneNumber"><br>
+    <input type="text" id="name" name="name" required><br>
     <label for="emailAddress">Email Address</label><br>
-    <input type="text" id="emailAddress" name="emailAddress"><br>
+    <input type="text" id="emailAddress" name="emailAddress" required><br>
     <label for="message">Your Message</label><br>
-    <input type="text" id="message" name="message"><br>
+    <input type="text" id="message" name="message" required><br>
+    <input type="submit" value="Send">
 </form>

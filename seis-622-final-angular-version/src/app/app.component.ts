@@ -9,4 +9,5 @@ import { RouterLink } from '@angular/router';
 })
 export class AppComponent {
   title = 'seis-622-final-angular-version';
+  
 }
