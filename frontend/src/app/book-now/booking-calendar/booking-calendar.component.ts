@@ -9,6 +9,9 @@ import { AppointmentService, AppointmentDay } from '../services/appointment.serv
 })
 export class BookingCalendarComponent implements OnInit {
   calendar: AppointmentDay[] = [];
+  selectedStaff: string | null = null;
+  selectedService: string | null = null;
+
 
   constructor(private appointmentService: AppointmentService) { }
 

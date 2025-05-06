@@ -2,19 +2,34 @@
     src='https://outlook.office.com/owa/calendar/LuxeSalon@uofstthomasmn.onmicrosoft.com/bookings/?ismsaljsauthenabled'
     width='100%' height='100%' scrolling='yes' style='border:0'></iframe> -->
 
-<button (click)="previousWeek()">Previous</button>
-<button (click)="nextWeek()">Next</button>
+<select [(ngModel)]="selectedStaff" name="staff" id="staff">
+    <option [value]="null" disabled selected>Select Staff</option>
+    <option value="staff one">Staff One</option>
+    <option value="staff two">Staff Two</option>
+</select>
 
-<div *ngFor="let day of visibleWeek">
-    <h3>{{ day.date }}</h3>
-    <button (click)="selectDay(day)">View Appointments</button>
-</div>
+<select [(ngModel)]="selectedService" name="service" id="service">
+    <option [value]="null" disabled selected>Select Service</option>
+    <option value="service one">Service One</option>
+    <option value="service two">Service Two</option>
+</select>
 
-<div *ngIf="selectedDay">
-    <h2>Appointments for {{ selectedDay.date }}</h2>
-    <div *ngFor="let slot of selectedDay.appointments">
-        <button (click)="confirmBooking(selectedDay.date, slot)">{{ slot }}</button>
+<div *ngIf="selectedStaff && selectedService">
+    <button (click)="previousWeek()">Previous</button>
+    <button (click)="nextWeek()">Next</button>
+
+    <div *ngFor="let day of visibleWeek">
+        <h3>{{ day.date }}</h3>
+        <button (click)="selectDay(day)">View Appointments</button>
     </div>
+
+    <div *ngIf="selectedDay">
+        <h2>Appointments for {{ selectedDay.date }}</h2>
+        <div *ngFor="let slot of selectedDay.appointments">
+            <button (click)="confirmBooking(selectedDay.date, slot)">{{ slot }}</button>
+        </div>
+    </div>
+
 </div>
 
 <div *ngIf="pendingBooking">
