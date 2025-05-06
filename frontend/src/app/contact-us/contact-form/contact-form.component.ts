@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ContactService } from '../../contact.service';
-import { HttpClient } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-form',
@@ -8,26 +10,52 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css'
 })
+
 export class ContactFormComponent {
-  formData = {
-    name: '',
-    emailAddress: '',
-    message: '',
+
+  personName: string;
+  saveUnsuccessful: boolean;
+  emailAddress: string;
+  message: string;
+
+  constructor(public httpClient: HttpClient) {
+
   }
 
-  constructor(private http: HttpClient) { }
+  onFormSubmit(ngForm: NgForm) {
+    this.saveUnsuccessful = false;
 
-  onSubmit() {
-    const fabformUrl = 'https://fabform.io/f/6rd4Ng6';
+    if (!ngForm.valid) {
+      this.saveUnsuccessful = true;
+      return;
+    } console.log(ngForm);
 
-    this.http.post(fabformUrl, this.formData).subscribe(
-      () => {
-        console.log('Form submitted successfully!');
-        // You can redirect or perform other actions after successful submission
+    const options = {
+      headers: new HttpHeaders({
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      })
+    };
+
+    const data = {
+      name: this.personName,
+      email: this.emailAddress,
+      message: this.message
+    };
+
+    this.httpClient.post<any>("http://localhost:3000", data, options).subscribe({
+      next: () => {
+        console.log("Call successful", data);
       },
-      (error) => {
-        console.error('Error submitting the form:', error);
+      error: (err) => {
+        console.log("Error: ", err);
+        console.log(data)
       }
-    );
+    })
+
+    // line of code that submits form to a server
+
+    ngForm.resetForm();
   }
+
 }

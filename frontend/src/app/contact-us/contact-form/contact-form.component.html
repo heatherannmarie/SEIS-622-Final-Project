@@ -1,9 +1,12 @@
-<form (ngSubmit)="onSubmit()">
+<form class="contact-form" #f="ngForm" (ngSubmit)="onFormSubmit(f)">
     <label for="name">Name</label><br>
-    <input type="text" id="name" name="name" required><br>
+    <input type="text" id="name" name="personName" required [(ngModel)]="personName"><br>
+
     <label for="emailAddress">Email Address</label><br>
-    <input type="text" id="emailAddress" name="emailAddress" required><br>
+    <input type="text" id="emailAddress" name="emailAddress" required [(ngModel)]="emailAddress"><br>
+
     <label for="message">Your Message</label><br>
-    <input type="text" id="message" name="message" required><br>
+    <input type="text" id="message" name="message" required [(ngModel)]="message"><br>
+
     <input type="submit" value="Send">
 </form>
