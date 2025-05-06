@@ -1,7 +1,7 @@
-import express from 'express';
+const express = require('express');
 import contactRoutes from './routes/contactForm';
 import appointmentRoutes from './routes/appointmentCalendar';
-import cors from 'cors';
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;

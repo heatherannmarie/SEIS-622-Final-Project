@@ -1,3 +1,10 @@
-<iframe
+<!-- <iframe
     src='https://outlook.office.com/owa/calendar/LuxeSalon@uofstthomasmn.onmicrosoft.com/bookings/?ismsaljsauthenabled'
-    width='100%' height='100%' scrolling='yes' style='border:0'></iframe>
+    width='100%' height='100%' scrolling='yes' style='border:0'></iframe> -->
+
+<div *ngFor="let day of calendar">
+    <h3>{{ day.date }}</h3>
+    <div *ngFor="let slot of day.appointments">
+        <button (click)="book(day.date, slot)">{{ slot }}</button>
+    </div>
+</div>

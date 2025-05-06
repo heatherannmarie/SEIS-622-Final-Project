@@ -10,7 +10,7 @@ const router = express.Router();
 
 const filePath = path.join(__dirname, 'contactFormResponses.json');
 
-const { formResponses } = require('./formResponses');
+const { formResponses } = require("./formResponses");
 
 let formResponsesList: typeof formResponses[] = [];
 
