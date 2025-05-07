@@ -1,0 +1,40 @@
+
+
+.week-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.week-navigation button {
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.date-row {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    /* optional, but keeps it responsive */
+}
+
+.date-row button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.date-row button.selected {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    /* horizontal centering */
+    gap: 20px;
+    /* space between the dropdowns */
+    margin-bottom: 20px;
+}

@@ -1,27 +1,29 @@
-<!-- <iframe
-    src='https://outlook.office.com/owa/calendar/LuxeSalon@uofstthomasmn.onmicrosoft.com/bookings/?ismsaljsauthenabled'
-    width='100%' height='100%' scrolling='yes' style='border:0'></iframe> -->
+<div class="dropdown-container">
+    <select [(ngModel)]="selectedStaff" name="staff" id="staff">
+        <option [value]="null" disabled selected>Select Staff</option>
+        <option value="staff one">Staff One</option>
+        <option value="staff two">Staff Two</option>
+    </select>
 
-<select [(ngModel)]="selectedStaff" name="staff" id="staff">
-    <option [value]="null" disabled selected>Select Staff</option>
-    <option value="staff one">Staff One</option>
-    <option value="staff two">Staff Two</option>
-</select>
+    <select [(ngModel)]="selectedService" name="service" id="service">
+        <option [value]="null" disabled selected>Select Service</option>
+        <option value="service one">Service One</option>
+        <option value="service two">Service Two</option>
+    </select>
+</div>
 
-<select [(ngModel)]="selectedService" name="service" id="service">
-    <option [value]="null" disabled selected>Select Service</option>
-    <option value="service one">Service One</option>
-    <option value="service two">Service Two</option>
-</select>
+<div class="week-navigation">
+    <button (click)="previousWeek()" [disabled]="currentWeekStart === 0">‹</button>
 
-<div *ngIf="selectedStaff && selectedService">
-    <button (click)="previousWeek()">Previous</button>
-    <button (click)="nextWeek()">Next</button>
-
-    <div *ngFor="let day of visibleWeek">
-        <h3>{{ day.date }}</h3>
-        <button (click)="selectDay(day)">View Appointments</button>
+    <div class="date-row">
+        <button *ngFor="let day of visibleWeek" (click)="selectDay(day)"
+            [class.selected]="selectedDay?.date === day.date">
+            {{ day.date }}
+        </button>
     </div>
+
+    <button (click)="nextWeek()" [disabled]="currentWeekStart + 7 >= calendar.length">›</button>
+</div>
 
     <div *ngIf="selectedDay">
         <h2>Appointments for {{ selectedDay.date }}</h2>
@@ -29,8 +31,6 @@
             <button (click)="confirmBooking(selectedDay.date, slot)">{{ slot }}</button>
         </div>
     </div>
-
-</div>
 
 <div *ngIf="pendingBooking">
     <h2>Confirm Booking</h2>
