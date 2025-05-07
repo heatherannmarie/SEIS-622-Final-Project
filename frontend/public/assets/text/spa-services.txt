@@ -1,10 +1,10 @@
 [
     {
-        "service":
-        "category":
-        "description":
-        "price":
-    }
+        "service":"spa service",
+        "category":"spa",
+        "description":"example description",
+        "price":"100",
+    },
     {
         "service":
         "category":

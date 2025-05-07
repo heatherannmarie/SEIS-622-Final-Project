@@ -1,0 +1,17 @@
+table {
+    border: 1px, red;
+}
+
+.servicedescription {
+    display: none;
+}
+
+.servicename+.servicedescription {
+    display: block;
+    color: blue;
+}
+
+.serviceprice+.servicedescription {
+    display: block;
+    color: blue;
+}
