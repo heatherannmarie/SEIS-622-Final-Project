@@ -1,38 +1,8 @@
-<!-- <figure>
-    <img src="/images/Girl1.jpg" alt="Sarah" height="300" width="500">
-    <figcaption>Hello, I'm Sara and I specialize in Makeup. Book with me!</figcaption>
-</figure>
-
-<figure>
-    <img src="/images/Boy1.jpg" alt="Ethan" height="400" width="400">
-    <figcaption>Hello, I'm Ethan and I specialize in Nails. Book with me!</figcaption>
-</figure>
-
-<figure>
-    <img src="/images/Boy2.jpg" alt="Glen" height="450" width="350">
-    <figcaption>Hello, I'm Glen and I specialize in Hair. Book with me!</figcaption>
-</figure>
-
-
-<figure>
-    <img src="/images/Girl2.jpg" alt="Jasmine" height="300" width="500">
-    <figcaption>Hello, I'm Jasmine and I specialize in Skincare. Book with me!</figcaption>
-</figure> -->
-
-<h2>Meet our Team</h2>
-<!-- <div *ngIf="employees.length > 0">
-    <table>
-        <tr *ngFor="let employee of employees">
-            <td><img src="/assets/images/{{employee.filename}}"></td>
-            <td>Hi, my name is {{ employee.name }} and I'm a {{ employee.jobtitle }} at Luxe Salon. {{ employee.bio }}
-            </td>
-        </tr>
-    </table>
-</div> -->
+<h1 id="staffpage">Meet our Team</h1>
 
 <div class="staff-grid">
     <div *ngFor="let employee of employees" class="staff-card" (click)="toggleDescription(employee)">
-        <img [src]="'/assets/images/' + employee.filename" alt="Employee Photo">
+        <img [src]="'/images/' + employee.filename" alt="Employee Photo">
         <h3>{{ employee.name }}</h3>
         <h4>{{ employee.jobtitle }}</h4>
         <p *ngIf="employee.showDescription">{{ employee.bio }}</p> <!-- Show bio description when clicked -->

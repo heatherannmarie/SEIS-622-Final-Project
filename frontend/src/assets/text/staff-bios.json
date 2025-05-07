@@ -1,67 +1,67 @@
 [
     {
         "name": "Tanisha",
-        "filename": "tanisha.jpg",
+        "filename": "tanisha-icon.jpg",
         "jobtitle": "Owner",
         "bio": "I'm the owner for Luxe Salon. Haircare is my specialty but I love improving my nail, makeup, and skincare abilities."
     },
     {
         "name": "Antony",
-        "filename": "antony.jpg",
+        "filename": "antony-icon.jpg",
         "jobtitle": "Stylist",
         "bio": "I love creating precise hair cuts, whether that's fades with an electric razer or blunt bobs with scissors."
     },
     {
         "name": "Connor",
-        "filename": "connor.jpg",
+        "filename": "connor-icon.jpg",
         "jobtitle": "Colorist",
         "bio": "When you're done with your haircut, add an appointment with me to add some color! I love all types of color services- bright blondes, warm browns, vibrant reds, and all the out-there fashion colors you could ever want."
     },
     {
         "name": "Kirsten",
-        "filename": "kirsten.jpg",
+        "filename": "kirsten-icon.jpg",
         "jobtitle": "Stylist",
         "bio": "Book with me for a cut and color! My specialty is creating dimensional blondes."
     },
     {
         "name": "Lance",
-        "filename": "lance.jpg",
+        "filename": "lance-icon.jpg",
         "jobtitle": "Stylist",
         "bio": "My speciality is short hair cuts, undercuts, and fades."
     },
     {
         "name": "Rowan",
-        "filename": "rowan.jpg",
+        "filename": "rowan-icon.jpg",
         "jobtitle": "Esthetician",
         "bio": "Helping people feel comfortable in their skin is important to me."
     },
     {
         "name": "Chanelle",
-        "filename": "chanelle.jpg",
+        "filename": "chanelle-icon.jpg",
         "jobtitle": "Esthetician",
         "bio": "Skin care is my passion. I'd love to work with you long term to provide services and recommendations that are right for you!"
     },
     {
         "name": "Ana",
-        "filename": "ana.jpg",
+        "filename": "ana-icon.jpg",
         "jobtitle": "Massage Therpaist",
         "bio": "I value creating a calming, relaxing space for my clients to unwind and clear their minds."
     },
     {
         "name": "Shelby",
-        "filename": "shelby.jpg",
+        "filename": "shelby-icon.jpg",
         "jobtitle": "Nail Technician",
         "bio": "My favorite part of my job is creating nail art!"
     },
     {
         "name": "Violet",
-        "filename": "violet.jpg",
+        "filename": "violet-icon.jpg",
         "jobtitle": "Nail Technician",
         "bio": "Whether you want a simple, one color manicure, or a complex set of detailed nails, I would love to work with you!"
     },
     {
         "name": "Jessi",
-        "filename": "jessi.jpg",
+        "filename": "jessi-icon.jpg",
         "jobtitle": "Receptionist",
         "bio": "I love providing excellent customer service to our clients!"
     }
