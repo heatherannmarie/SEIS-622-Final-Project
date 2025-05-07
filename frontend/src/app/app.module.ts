@@ -7,8 +7,6 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServiceMenuComponent } from './services/service-menu/service-menu.component';
-import { StaffBioComponent } from './staff/staff-bio/staff-bio.component';
 import { PhotoBannerComponent } from './photo-banner/photo-banner.component';
 import { BookingCalendarComponent } from './book-now/booking-calendar/booking-calendar.component';
 import { AboutComponent } from './about/about.component';
@@ -23,8 +21,6 @@ import { ContactFormComponent } from './contact-us/contact-form/contact-form.com
 @NgModule({
   declarations: [
     AppComponent,
-    ServiceMenuComponent,
-    StaffBioComponent,
     PhotoBannerComponent,
     BookingCalendarComponent,
     AboutComponent,

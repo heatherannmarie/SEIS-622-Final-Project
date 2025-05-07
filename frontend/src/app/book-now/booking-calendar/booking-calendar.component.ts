@@ -17,6 +17,7 @@ export class BookingCalendarComponent implements OnInit {
 
   ngOnInit(): void {
     this.appointmentService.getCalendar().subscribe(data => {
+      console.log('Received calendar data', data)
       this.calendar = data;
     });
   }

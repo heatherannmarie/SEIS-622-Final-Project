@@ -1,4 +1,4 @@
-<figure>
+<!-- <figure>
     <img src="/images/Girl1.jpg" alt="Sarah" height="300" width="500">
     <figcaption>Hello, I'm Sara and I specialize in Makeup. Book with me!</figcaption>
 </figure>
@@ -17,4 +17,16 @@
 <figure>
     <img src="/images/Girl2.jpg" alt="Jasmine" height="300" width="500">
     <figcaption>Hello, I'm Jasmine and I specialize in Skincare. Book with me!</figcaption>
-</figure>
+</figure> -->
+
+<h2>Meet our Team</h2>
+<div *ngIf="employees.length > 0">
+    <ul>
+        <li *ngFor="let employee of employees">
+            <img src="/assets/images/{{employee.filename}}">
+            <h3>{{ employee.name }}</h3>
+            <h4>{{ employee.jobtitle }}</h4>
+            <p>{{ employee.bio }}</p>
+        </li>
+    </ul>
+</div>

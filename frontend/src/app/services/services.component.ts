@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ServiceMenuService } from '../service-menu.service';
 
 @Component({
   selector: 'app-services',
@@ -7,5 +8,23 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.css'
 })
 export class ServicesComponent {
+  services: any[] = [];
 
+  constructor(private serviceMenu: ServiceMenuService) { }
+
+  ngOnInit(): void {
+    this.loadServices('/assets/text/salon-services.json');
+  }
+
+  loadServices(filePath: string): void {
+    this.serviceMenu.getServices(filePath).subscribe(
+      (data) => {
+        this.services = data;
+        console.log(this.services); // Check if the data is loaded correctly
+      },
+      (error) => {
+        console.error('Error loading services:', error);
+      }
+    );
+  }
 }

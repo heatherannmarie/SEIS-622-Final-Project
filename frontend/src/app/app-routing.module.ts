@@ -8,10 +8,8 @@ import { ContactFormComponent } from './contact-us/contact-form/contact-form.com
 import { PhotoBannerComponent } from './photo-banner/photo-banner.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { ServicesComponent } from './services/services.component';
-import { ServiceMenuComponent } from './services/service-menu/service-menu.component';
 import { SpaComponent } from './spa/spa.component';
 import { StaffComponent } from './staff/staff.component';
-import { StaffBioComponent } from './staff/staff-bio/staff-bio.component';
 
 const routes: Routes = [
   { path: 'about-component', component: AboutComponent },
@@ -22,10 +20,8 @@ const routes: Routes = [
   { path: 'photo-banner-component', component: PhotoBannerComponent },
   { path: 'policies-component', component: PoliciesComponent },
   { path: 'services-component', component: ServicesComponent },
-  { path: 'services-menu-component', component: ServiceMenuComponent },
   { path: 'spa-component', component: SpaComponent },
   { path: 'staff-component', component: StaffComponent },
-  { path: 'staff-bio-component', component: StaffBioComponent },
 ];
 
 @NgModule({
