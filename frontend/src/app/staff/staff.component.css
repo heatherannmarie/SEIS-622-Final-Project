@@ -1,0 +1,30 @@
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.staff-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+    /* Add a hover effect for better interaction */
+}
+
+.staff-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.staff-card p {
+    margin-top: 10px;
+}

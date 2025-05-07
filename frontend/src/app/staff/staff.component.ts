@@ -21,14 +21,18 @@ export class StaffComponent {
 
   loadEmployees(filePath: string): void {
     this.staffBio.getStaffBio(filePath).subscribe(
-      (data) => {
-        console.log("Data received", data)
+      (data: any[]) => {
         this.employees = data;
         console.log(this.employees);
       },
-      (error) => {
+      (error: any) => {
         console.error("Error loading staff bios:", error);
       }
     );
+  }
+
+  toggleDescription(employee: any): void {
+    // Toggle visibility of the description for the clicked employee
+    employee.showDescription = !employee.showDescription;
   }
 }

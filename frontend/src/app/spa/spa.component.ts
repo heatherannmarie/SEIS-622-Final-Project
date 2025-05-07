@@ -27,4 +27,8 @@ export class SpaComponent {
       }
     );
   }
+  toggleServiceDescription(service: any): void {
+    // Toggle visibility of the service description
+    service.showDescription = !service.showDescription;
+  }
 }

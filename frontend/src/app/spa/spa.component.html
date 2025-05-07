@@ -9,9 +9,15 @@
 <div *ngIf="services.length > 0">
     <table>
         <tr *ngFor="let service of services">
-            <td title="servicename">{{ service.service }}</td>
-            <td title="serviceprice">{{ service.price }}</td>
-            <td title="servicedescription">{{ service.description }}</td>
+            <td (click)="toggleServiceDescription(service)" title="servicename">
+                <p>{{ service.service }}</p>
+            </td>
+            <td (click)="toggleServiceDescription(service)" title="serviceprice">
+                <p>{{ service.price }}</p>
+            </td>
+            <td title="servicedescription">
+                <p *ngIf="service.showDescription">{{ service.description }}</p>
+            </td>
         </tr>
     </table>
 </div>

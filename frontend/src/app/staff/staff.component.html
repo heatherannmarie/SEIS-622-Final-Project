@@ -20,7 +20,7 @@
 </figure> -->
 
 <h2>Meet our Team</h2>
-<div *ngIf="employees.length > 0">
+<!-- <div *ngIf="employees.length > 0">
     <table>
         <tr *ngFor="let employee of employees">
             <td><img src="/assets/images/{{employee.filename}}"></td>
@@ -28,4 +28,13 @@
             </td>
         </tr>
     </table>
+</div> -->
+
+<div class="staff-grid">
+    <div *ngFor="let employee of employees" class="staff-card" (click)="toggleDescription(employee)">
+        <img [src]="'/assets/images/' + employee.filename" alt="Employee Photo">
+        <h3>{{ employee.name }}</h3>
+        <h4>{{ employee.jobtitle }}</h4>
+        <p *ngIf="employee.showDescription">{{ employee.bio }}</p> <!-- Show bio description when clicked -->
+    </div>
 </div>
