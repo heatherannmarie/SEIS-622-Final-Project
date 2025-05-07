@@ -10,6 +10,8 @@ import { PoliciesComponent } from './policies/policies.component';
 import { ServicesComponent } from './services/services.component';
 import { SpaComponent } from './spa/spa.component';
 import { StaffComponent } from './staff/staff.component';
+import { HomeComponent } from './home/home.component';
+import { BibliographyComponent } from './bibliography/bibliography.component';
 
 const routes: Routes = [
   { path: 'about-component', component: AboutComponent },
@@ -22,6 +24,9 @@ const routes: Routes = [
   { path: 'services-component', component: ServicesComponent },
   { path: 'spa-component', component: SpaComponent },
   { path: 'staff-component', component: StaffComponent },
+  { path: 'home-component', component: HomeComponent},
+  { path: 'bibliography-component', component: BibliographyComponent},
+  { path: '', redirectTo: '/home-component', pathMatch: 'full'}
 ];
 
 @NgModule({

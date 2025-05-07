@@ -17,6 +17,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { BookNowComponent } from './book-now/book-now.component';
 import { ContactFormComponent } from './contact-us/contact-form/contact-form.component';
+import { HomeComponent } from './home/home.component';
+import { BibliographyComponent } from './bibliography/bibliography.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ContactFormComponent } from './contact-us/contact-form/contact-form.com
     ContactUsComponent,
     PoliciesComponent,
     BookNowComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HomeComponent,
+    BibliographyComponent
   ],
   imports: [
     BrowserModule,
