@@ -1,0 +1,44 @@
+[
+    {
+        "service": "Hair Cut",
+        "category": "hair cut",
+        "description": "Select this whether you want a basic time or a full blown chop! If you have curly, thick, or extra long hair, please call us so we can make sure your apointment is the correct length.",
+        "price": "50"
+    },
+    {
+        "service": "Hair Cut and Treatment",
+        "category": "hair cut",
+        "description": "Our signature haircut plus a treatment of your choice- deep conditioning, clarifying, or strengthening.",
+        "price": "75"
+    },
+    {
+        "service": "Wash and Style",
+        "category": "style",
+        "description": "We'll start with a wash, scalp massage, and conditioning treatment, then we will either blowout or dry and style your hair to your liking.",
+        "price": "45"
+    },
+    {
+        "service": "Quick Cut",
+        "category": "hair cut",
+        "description": "Do you truly need just a half an inch of a trim? Book our 30 minute quick cut to save yourself some time and money!",
+        "price": "30"
+    },
+    {
+        "service": "Bang Trim",
+        "category": "hair cut",
+        "description": "If all you need is your fringe touched up, select this service. No hair other than your bangs will be cut during this service.",
+        "price": "15"
+    },
+    {
+        "service": "Full Color",
+        "category": "color",
+        "description": "One single process color applied to the entire head. No highlights or lowlights, no balayage.",
+        "price": "120"
+    },
+    {
+        "service": "Color Retouch",
+        "category": "color",
+        "description": "Retouch your roots or any grays to blend with previously dyed mid-lengths.",
+        "price": "100"
+    }
+]

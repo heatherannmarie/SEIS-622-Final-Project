@@ -1,0 +1,44 @@
+    [
+        {
+            "service": "Hydrating Facial",
+            "category": "skincare",
+            "description": "Our basic facial, perfect for those who are new to luxury skincare services or aren't sure what types of products will benefit their skin.",
+            "price": "120"
+        },
+        {
+            "service": "Custom Facial",
+            "category": "skincare",
+            "description": "For returning clients only. A facial customized to your skincare needs.",
+            "price": "180"
+        },
+        {
+            "service": "Brow Shaping",
+            "category": "brows",
+            "description": "A full brow shaping, including a consultation, waxing, trimming, and tweezing.",
+            "price": "50"
+        },
+        {
+            "service": "Brow Tinting",
+            "category": "brows",
+            "description": "For dying brows to either make fine hairs stand out more, or to match hair color. Lasts 4-6 weeks. This service includes brow shaping.",
+            "price": "85"
+        },
+        {
+            "service": "60 Minute Massage",
+            "category": "spa",
+            "description": "A 60 minute full body massage with your choice of scented massage oils.",
+            "price": "80"
+        },
+        {
+            "service": "90 Minute Massage",
+            "category": "spa",
+            "description": "A 90 minute full body massage with your choice of scented massage oils.",
+            "price": "110"
+        },
+        {
+            "service": "Gel Manicure",
+            "category": "nails",
+            "description": "A single color gel polish manicure that is made to last! Art can be added on, please call for assistance.",
+            "price": "70"
+        }
+    ]
