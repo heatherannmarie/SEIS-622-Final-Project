@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css or styles.scss */
+
+/* Apply full height and flexbox layout to the body and html */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+app-root {
+    display: flex;
+    /* Make the root element a flex container */
+    flex-direction: column;
+    /* Stack header, content, and footer vertically */
+    height: 100%;
+    /* Take up the full height of the viewport */
+}
+
+/* This will allow the content area to grow and push the footer down */
+router-outlet {
+    flex-grow: 1;
+    /* The router-outlet content should take up available space */
+}
+
+header {
+    width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+}
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
