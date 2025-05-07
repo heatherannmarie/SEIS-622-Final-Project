@@ -21,12 +21,12 @@
     padding: 10px;
     cursor: pointer;
     border: 1px, lightgray;
-    background-color: darkslategray;
-    color: lightblue;
+    background-color: #34495e;
+    color:#e4f1fe;
 }
 
 .date-row button.selected {
-    background-color: lightblue;
+    background-color:#e4f1fe;
     color: darkslategray;
     font-weight: bold;
 }
@@ -44,8 +44,8 @@
     padding: 10px;
     cursor: pointer;
     border: 1px, lightgray;
-    background-color: darkslategray;
-    color: lightblue;
+    background-color: #34495e;
+    color: #e4f1fe;
 }
 
 #service,
