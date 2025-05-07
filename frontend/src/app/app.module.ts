@@ -7,7 +7,6 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PhotoBannerComponent } from './photo-banner/photo-banner.component';
 import { BookingCalendarComponent } from './book-now/booking-calendar/booking-calendar.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
@@ -23,7 +22,6 @@ import { BibliographyComponent } from './bibliography/bibliography.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoBannerComponent,
     BookingCalendarComponent,
     AboutComponent,
     ServicesComponent,

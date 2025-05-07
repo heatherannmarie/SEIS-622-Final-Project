@@ -13,7 +13,7 @@ export class ServicesComponent {
   constructor(private serviceMenu: ServiceMenuService) { }
 
   ngOnInit(): void {
-    this.loadServices('/assets/text/salon-services.json');
+    this.loadServices('/text/salon-services.json');
   }
 
   loadServices(filePath: string): void {

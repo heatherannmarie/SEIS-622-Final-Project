@@ -5,7 +5,6 @@ import { BookNowComponent } from './book-now/book-now.component';
 import { BookingCalendarComponent } from './book-now/booking-calendar/booking-calendar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactFormComponent } from './contact-us/contact-form/contact-form.component';
-import { PhotoBannerComponent } from './photo-banner/photo-banner.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { ServicesComponent } from './services/services.component';
 import { SpaComponent } from './spa/spa.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
   { path: 'booking-calendar-component', component: BookingCalendarComponent },
   { path: 'contact-us-component', component: ContactUsComponent },
   { path: 'contact-form-component', component: ContactFormComponent },
-  { path: 'photo-banner-component', component: PhotoBannerComponent },
   { path: 'policies-component', component: PoliciesComponent },
   { path: 'services-component', component: ServicesComponent },
   { path: 'spa-component', component: SpaComponent },

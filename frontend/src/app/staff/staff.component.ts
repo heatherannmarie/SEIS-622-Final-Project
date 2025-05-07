@@ -15,7 +15,7 @@ export class StaffComponent {
   }
 
   ngOnInit(): void {
-    this.loadEmployees('/assets/text/staff-bios.json');
+    this.loadEmployees('/text/staff-bios.json');
     console.log(this.employees);
   }
 

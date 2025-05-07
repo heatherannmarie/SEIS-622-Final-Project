@@ -1,0 +1,25 @@
+#name {
+    width: 500px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+
+#emailAddress {
+    width: 500px;
+    height: 20px;
+    margin: 5px;
+}
+
+#message {
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+}
+
+#submit {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    vertical-align: top;
+}

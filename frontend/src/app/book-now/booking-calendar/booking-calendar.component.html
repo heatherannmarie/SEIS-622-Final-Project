@@ -28,7 +28,7 @@
     <div *ngIf="selectedDay">
         <h2>Appointments for {{ selectedDay.date }}</h2>
         <div *ngFor="let slot of selectedDay.appointments">
-            <button (click)="confirmBooking(selectedDay.date, slot)">{{ slot }}</button>
+            <button id="appointments" (click)="confirmBooking(selectedDay.date, slot)">{{ slot }}</button>
         </div>
     </div>
 

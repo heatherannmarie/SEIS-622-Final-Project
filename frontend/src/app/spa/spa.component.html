@@ -7,7 +7,7 @@
 <h2>Spa Services</h2>
 
 <div *ngIf="services.length > 0">
-    <table>
+    <table id="spaservices">
         <tr *ngFor="let service of services">
             <td (click)="toggleServiceDescription(service)" title="servicename">
                 <p>{{ service.service }}</p>

@@ -1,0 +1,10 @@
+#policiesText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
