@@ -43,7 +43,7 @@ export class ContactFormComponent {
       message: this.message
     };
 
-    this.httpClient.post<any>("http://localhost:3000", data, options).subscribe({
+    this.httpClient.post<any>("http://localhost:3000/api/contact", data, options).subscribe({
       next: () => {
         console.log("Call successful", data);
       },
@@ -52,8 +52,6 @@ export class ContactFormComponent {
         console.log(data)
       }
     })
-
-    // line of code that submits form to a server
 
     ngForm.resetForm();
   }

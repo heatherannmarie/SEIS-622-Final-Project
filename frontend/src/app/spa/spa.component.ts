@@ -20,7 +20,7 @@ export class SpaComponent {
     this.serviceMenu.getServices(filePath).subscribe(
       (data) => {
         this.services = data;
-        console.log(this.services); // Check if the data is loaded correctly
+        console.log(this.services);
       },
       (error) => {
         console.error('Error loading services:', error);
@@ -28,7 +28,6 @@ export class SpaComponent {
     );
   }
   toggleServiceDescription(service: any): void {
-    // Toggle visibility of the service description
     service.showDescription = !service.showDescription;
   }
 }

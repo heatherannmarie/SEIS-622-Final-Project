@@ -1,13 +1,5 @@
 <h2>Services Offered</h2>
 <div *ngIf="services.length > 0">
-    <!-- <ul>
-        <li *ngFor="let service of services">
-            <h3>{{ service.service }}</h3>
-            <p>{{ service.description }}</p>
-            <p><strong>Price:</strong> ${{ service.price }}</p>
-        </li>
-    </ul> -->
-
     <table id="salonservices">
         <tr *ngFor="let service of services">
             <td (click)="toggleServiceDescription(service)" title="servicename">
@@ -22,5 +14,3 @@
         </tr>
     </table>
 </div>
-
-<p>Interested in our spa services? <a href="Spa.html">Click here to learn more!</a></p>

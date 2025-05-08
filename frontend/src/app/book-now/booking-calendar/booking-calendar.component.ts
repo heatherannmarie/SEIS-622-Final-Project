@@ -58,7 +58,7 @@ export class BookingCalendarComponent implements OnInit {
     const { date, slot } = this.pendingBooking;
     this.book(date, slot);
     this.pendingBooking = null;
-    this.selectedDay = null; // optionally reset after booking
+    this.selectedDay = null;
   }
 
   book(date: string, slot: string) {

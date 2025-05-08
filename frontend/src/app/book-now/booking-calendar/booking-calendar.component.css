@@ -34,9 +34,7 @@
 .dropdown-container {
     display: flex;
     justify-content: center;
-    /* horizontal centering */
     gap: 20px;
-    /* space between the dropdowns */
     margin-bottom: 20px;
 }
 

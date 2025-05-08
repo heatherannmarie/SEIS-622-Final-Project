@@ -1,7 +1,6 @@
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 columns */
     gap: 20px;
     padding: 20px;
 }
@@ -16,7 +15,6 @@
 
 .staff-card:hover {
     transform: scale(1.05);
-    /* Add a hover effect for better interaction */
 }
 
 .staff-card img {
